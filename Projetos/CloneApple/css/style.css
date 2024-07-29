@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #000;
+}
+
+nav .navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: .8rem;
+    background-color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #bcbcbc;
+}
+
+.bottomHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1D1D20;
+    font-size: 0.9rem;
+    color: #bcbcbc;
+
+    height: 80px;
+}
+
+.bottomHeader p a{
+    text-decoration: none;
+    color:#2784DC;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+main h1{
+    text-align: start;
+    margin: 5rem 3rem;
+    color: #86868B;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+main #product-image{
+    max-width: 1000px;
+    margin: 3rem auto;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+main .product-image .chaging{
+    opacity: 0.5;
+}
+
+.imagePicker {
+    margin-bottom: 500px;
+}
+
+.imagePicker ul{
+    display: flex ;
+    justify-content: center;
+    background-color: #2E2E30;
+    border-radius: 5rem;
+    width: 330px;
+    margin: 0 auto;
+}
+
+.imagePicker li {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.imagePicker li .color{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    
+    pointer-events: none;
+}
+
+#all_colors .color{
+    background-color: #353633;
+}
+
+#natural_titanium .color{
+    background-color:#8E8A81 ;
+}
+
+#blue_titanium .color{
+    background-color: #202630;
+}
+
+#white_titanium .color{
+    background-color: #C9C8C3;
+}
+
+#black_titanium .color{
+    background-color: #252526;
+}
+
+.selected{
+    outline: 3px solid #ffff;
+    border: 2px solid #000;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .navbar li{
+        display: none;
+    }
+
+    .navbar .logo{
+        display: flex;
+    }
+
+    .bottomHeader{
+        display: none;
+    }
+
+    main #product-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 230px;
+
+    }
+}
