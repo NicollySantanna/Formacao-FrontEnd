@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    background-color: #171824;
+
+}
+
+html{
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+.containerHeader{
+    background-image: url(../img/bg-desktop-dark.jpg);
+    width: 100%;
+    height: 10rem;
+}
+
+.containerHeader h1{
+    text-align: center;
+    margin: 30px 300px 0 0; 
+    color: #fff;
+}
+
+.addTask{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formNewTask{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-bottom: 5rem;
+}
+
+#inputTask {
+    width: 25rem;
+    height: 2.5rem;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: #171824;
+    color: #fff;
+    position: relative;
+}
+
+#btnTask{
+    height: 2.5rem;
+    width: 3rem;
+    border: none;
+    background-color: #25283D;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#btnTask:hover{
+  background-color: #4474D3;
+}
+
+.containerList {
+display: flex;
+flex-direction: column;
+box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
+background-color: #25283D;
+color: #fff;
+width: 28rem;
+}
+
+.containerList ul li{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    list-style: none;
+    border-bottom: 1px solid #636363;
+}
+
+.listItems p{
+    margin-left: 1rem;
+}
+
+.btnCheck{
+    position: absolute;
+    left: 60%;
+    background-color: #25283D;
+    color: #b7b7b7;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   transition: .2s;
+}
+
+.btnCheck:hover{
+    color: #2e7a29;
+}
+
+.btnCancel {
+    position: absolute;
+    left: 58%;
+   background-color: #25283D;
+   color: #b7b7b7;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   transition: .2s;
+}
+
+.btnCancel:hover{
+    color: #b72121;
+}
+
+.btnEdit {
+    position: absolute;
+    left: 56%;
+   background-color: #25283D;
+   color: #b7b7b7;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   transition: .2s;
+}
+.btnEdit:hover{
+    color: #316297;
+}
+
+
+.done{
+    text-decoration: line-through;
+    color: #acacac;
+}
+
+footer{
+    width: 28rem;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #25283D;
+}
+
+footer button{
+    font-size: 12px;
+    height: 2.5rem;
+    border: none;
+    background-color: #25283D;
+    color: #acacac;
+    cursor: pointer;
+    transition: .2s;
+}
+
+footer button:hover{
+    color: #4474D3;
+}
+
+.editForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
+    background-color: #25283D;
+    color: #fff;
+    width: 28rem;
+    height: 10rem;
+}
+
+.editForm p{
+    margin-bottom: 1rem;
+}
+
+.editForm input {
+    width: 20rem;
+    height: 2.5rem;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: #171824;
+    color: #fff;
+    position: relative;
+}
+
+.editForm button[type="submit"] {
+   height: 2.5rem;
+   width: 3rem;
+    border: none;
+    background-color: #131314;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+#cancel-edit-btn{
+    margin-top: 1rem;
+    height: 2.5rem;
+    width: 10rem;
+    border: none;
+    background-color: #131314;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <script
+      src="https://kit.fontawesome.com/396f399ad4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>To do list</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="containerHeader">
+        <h1>T O D O</h1>
+        <i></i>
+      </header>
+
+      <div class="addTask">
+        <form class="formNewTask">
+          <input
+            type="text"
+            id="inputTask"
+            placeholder="Crie uma nova tarefa..."
+          />
+          <input type="submit" id="btnTask" value="+" />
+        </form>
+      </div>
+
+      <main class="containerList">
+        <!-- <ul class="listItems">
+          <li class="item">
+            <div class = "containerBtn"> 
+              <p class="done">Estudar Javascript</p>
+              <button class="btnCheck"><i class="far fa-check-circle"></i> </button>
+              <button class="btnCancel"><i class="fas fa-trash"></i></button>
+              <button class="btnEdit"><i class="fas fa-pen"></i></button>
+            </div>
+            </li>
+        </ul> -->
+      </main>
+      <footer class="footer">
+        <button id="all">Todos</button>
+        <button id="todo">A fazer</button>
+        <button id="completed">Completos</button>
+        <button id="clear">Limpar</button>
+      </footer>
+    </div>
+
+    <form class="editForm hide">
+        <p>Edite sua tarefa</p>
+        <div class="form-control">
+          <input type="text" id="edit-input" />
+          <button type="submit">
+            <i class="fa fa-check-double"></i>
+          </button>
+        </div>
+        <button id="cancel-edit-btn">Cancelar</button>
+    </form>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
