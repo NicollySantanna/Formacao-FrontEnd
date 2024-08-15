@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+.container{
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.container-img img{
+    width: 500px;
+}
+
+.container-img h1{
+    text-align: center;
+    color: #FF4E58;
+    position: absolute;
+    top: 3.5rem;
+}
+
+.container-form{
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color:#efefef ;
+  border-radius: 1rem;
+}
+
+.container-form h2, p{
+margin-bottom: .5rem;
+}
+.container-form h2{
+    color: #FF4E58;
+}
+.container-form p{
+    color: #787878;
+}
+
+form{
+    margin-top: 3rem;
+    display: flex;
+  flex-direction: column;
+}
+
+form input{
+    border: none;
+    border-bottom: 1px solid #c0c0c0;
+    background-color:#efefef ;
+    outline: none;
+    padding: .5rem;
+}
+form label{
+    margin-top: .5rem;
+}
+
+.p-senha{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.p-senha button{
+    cursor: pointer;
+    color: #FF4E58;
+    border: none;
+}
+
+.container-password{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    background-color: #ffffff;
+    margin: 1rem 0;
+    border-radius: 1rem;
+}
+
+.hide{
+    display: none;
+}
+
+.container-password .title{
+font-size: 1.3rem;
+margin-bottom: 1.5rem;
+}
+
+.container-password #password{
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.container-password #copy{
+    color: #c0c0c0;
+    font-size: .9rem;
+}
+
+#btnCadastrar{
+    margin-top: 1rem;
+    width: 200px;
+    height: 30px;
+    border-radius: 1rem;
+    border: none;
+    background-color: #FF4E58;
+    color: #fff;
+    cursor: pointer;
+}
+
+.gerarSenha{
+    width: 200px;
+    height: 30px;
+    background-color: #FF4E58;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 1rem;
+    margin: 1rem auto;
+}
+
+#copy{
+    cursor: pointer;
+}

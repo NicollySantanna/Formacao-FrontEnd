@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Gerador de senhas</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="container-img">
+            <img src="https://img.freepik.com/vetores-gratis/entrar-ilustracao-do-conceito_114360-125.jpg?t=st=1723584839~exp=1723588439~hmac=b55e63a3bf1d1fe3ba9a07c3ff87d358e0afc4f228c5e89b6261fc4e87a202d5&w=826" alt="password">
+            <h1>Seja bem-vindo</h1>
+        </div>
+        
+        <div class="container-form">
+            <h2>Crie sua conta:</h2>
+            <p>Registre-se para utilizar todas as funcionalidades do sistema</p>
+            <form>
+                <label for="name">Nome</label>
+                <input type="text" id="name">
+                
+                <label for="email">E-mail</label>
+                <input type="text" id="email">
+                
+                <label for="senha">Senha</label>
+                <input type="password" id="senha">
+                <p class="p-senha">Quer ajuda para criar uma senha segura? <button class="linkPassword">Clique aqui</button></p>
+                <div class="container-password hide">
+                    <span>Tamanho <span id="valor"></span> caracteres</span>
+                    <input id="slider" class="slider" type="range" max="25" min="5" value="5">
+                    <span id="password"></span>
+                    <button class="gerarSenha">Gerar senha</button>
+                    <span id="copy">Clique na senha para copiar</span>
+                </div>
+                
+                <label for="confirmarSenha">Confirmação de Senha</label>
+                <input type="password" id="confirmarSenha">
+                
+                <button id="btnCadastrar">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
