@@ -1,0 +1,15 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.navbar h2{
+    color: #4c2ed1;
+}
+
+.navbar ul{
+    align-items: center;
+}
